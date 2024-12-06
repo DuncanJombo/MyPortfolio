@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonard - Jombo</title>
+    <link rel="shortcut icon" href="code.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/tools.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"></a>Jombo</div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog-section">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="profile-container">
+                    <img src="jombo.jpeg" alt="Profile" class="profile-img">
+                </div>
+                <h1>Hi, I'm <span class="highlight">Lenard Jombo</span></h1>
+                <p class="typewriter">Software Developer</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary">Hire Me</a>
+                    <a href="#projects" class="btn secondary">View Work</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>As a passionate Software Developer with 2 years of experience, I specialize in creating
+                            intuitive and performant software applications. My journey in tech started with simple HTML
+                            pages and has evolved into building complex distributed systems.</p>
+                        <p class="mt-4">I believe in writing clean, maintainable code and staying up-to-date with the
+                            latest industry trends and best practices.</p>
+
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <div class="stat-number">2+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">25+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">12+</div>
+                                <div class="stat-label">Happy Clients</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">8+</div>
+                                <div class="stat-label">Open Source</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tools-section">
+                        <h3>Tools & Technologies</h3>
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <i class="fab fa-java"></i>
+                                <h4>Java</h4>
+                                <div class="proficiency">
+                                    <div class="proficiency-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="tool-card">
+                                <i class="fab fa-css3-alt"></i>
+                                <h4>css</h4>
+                                <div class="proficiency">
+                                    <div class="proficiency-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="tool-card">
+                                <i class="fab fa-js"></i>
+                                <h4>JavaScript</h4>
+                                <div class="proficiency">
+                                    <div class="proficiency-level" style="width: 98%"></div>
+                                </div>
+                            </div>
+                            <div class="tool-card">
+                                <i class="fab fa-python"></i>
+                                <h4>Python</h4>
+                                <div class="proficiency">
+                                    <div class="proficiency-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="tool-card">
+                                <i class="fab fa-jenkins"></i>
+                                <h4>Jenkins</h4>
+                                <div class="proficiency">
+                                    <div class="proficiency-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="tool-card">
+                                <i class="fab fa-linux"></i>
+                                <h4>Linux</h4>
+                                <div class="proficiency">
+                                    <div class="proficiency-level" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="tool-card">
+                                <i class="fab fa-git-alt"></i>
+                                <h4>Git</h4>
+                                <div class="proficiency">
+                                    <div class="proficiency-level" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="tool-card">
+                                <i class="fab fa-database"></i>
+                                <h4>MongoDB</h4>
+                                <div class="proficiency">
+                                    <div class="proficiency-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>I offer professional web development services using Python-based frameworks like Django and
+                            Flask for powerful back-end development, along with front-end technologies like HTML, CSS,
+                            and JavaScript for a seamless user experience.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsive Design</h3>
+                        <p> I specialize in building responsive designs that ensure a seamless user experience across
+                            all devices, whether mobile, tablet, or desktop. Let me help you build a scalable, secure,
+                            and fully responsive web solution tailored to your business needs.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                        <p>I offer professional web development services, specializing in backend development with
+                            Python-based frameworks like Django and Flask to create secure, scalable, and
+                            high-performance applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <!-- Projects will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="blog-section" class="blog-section">
+            <h2 class="section-title">My Blog & Articles</h2>
+            <div id="blog-container" class="blog-grid">
+                <!-- Blog posts will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <form id="contact-form" class="contact-form"
+                    method="post https://api.emailjs.com/api/v1.0/email/send-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@latest/dist/email.min.js"></script>
+
+            <script>
+                // Initialize EmailJS
+                (function () {
+                    emailjs.init("3C3onpoNejEnTmG2w");
+                })();
+
+                // Add event listener to the form
+                document.getElementById('contact-form').addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevent default form submission
+
+                    // Get form values
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+
+                    // Send email using EmailJS
+                    emailjs.send("service_i3vztpi", "template_unvoxnw", {
+                        name: name,
+                        email: email,
+                        message: message
+                    })
+                        .then(function (response) {
+                            console.log('SUCCESS!', response.status, response.text);
+
+                            // Show success alert
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Message Sent!',
+                                text: 'Your message was sent successfully.',
+                                confirmButtonColor: '#007BFF'
+                            });
+                        }, function (error) {
+                            console.log('FAILED...', error);
+
+                            // Show error alert
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Message Failed!',
+                                text: 'Failed to send your message. Please try again later.',
+                                confirmButtonColor: '#d33'
+                            });
+                        });
+                });
+            </script>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/lenardjombo" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/leonard-jombo-7063a3254/" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/i8_leonard/" aria-label="instagram"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Designed with ❤️ by Leonard Jombo . All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Theme toggle button moved outside navbar -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

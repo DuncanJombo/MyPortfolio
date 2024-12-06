@@ -1,0 +1,70 @@
+/* Theme variables */
+:root[data-theme="light"] {
+    --primary-color: #1e3a8a;
+    --secondary-color: #172554;
+    --text-color: #1f2937;
+    --bg-color: #ffffff;
+    --accent-color: #3b82f6;
+    --card-bg: #ffffff;
+    --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --input-border: #ddd;
+    --nav-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --gradient-start: #1e3a8a;
+    --gradient-end: #172554;
+}
+
+:root[data-theme="dark"] {
+    --primary-color: #3b82f6;
+    --secondary-color: #1e3a8a;
+    --text-color: #e5e7eb;
+    --bg-color: #0f172a;
+    --accent-color: #60a5fa;
+    --card-bg: #1e293b;
+    --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --input-border: #374151;
+    --nav-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --gradient-start: #1e3a8a;
+    --gradient-end: #0f172a;
+}
+
+/* Theme transitions */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* light theme */
+[data-theme="light"]{
+    .section-title{
+        color: var(--text-color);
+    }
+
+}
+/* Dark theme styles */
+[data-theme="dark"] {
+    /* Navigation */
+    .navbar {
+        background-color: var(--card-bg);
+        box-shadow: var(--nav-shadow);
+    }
+
+    /* Cards */
+    .service-card {
+        background-color: var(--card-bg);
+        box-shadow: var(--card-shadow);
+    }
+    .blog-container {
+        background-color: var(--card-bg);
+        box-shadow: var(--card-shadow);
+    }
+    /* Form elements */
+    .form-group input,
+    .form-group textarea {
+        background-color: var(--card-bg);
+        border-color: var(--input-border);
+        color: var(--text-color);
+    }
+
+    /* Hero section */
+    .hero {
+        background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    }
+}
